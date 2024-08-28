@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Placas de Preço</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="pricePlate" class="price-plate">
+        <div id="promoText" class="promo">PROMOÇÃO</div>
+        <div class="details">
+            <div id="productTypeText" class="product">ASINHA DE PORCO</div>
+            <div id="productText" class="highlight">DESTAQUE</div>
+            <div id="extraText" class="extra">ORELHA DE GALINHA</div>
+        </div>
+        <div class="price" id="priceContainer">
+            <div class="currency">R$:</div>
+            <div id="priceText" class="amount">10,99</div>
+            <div id="unitText" class="unit">Kg</div>
+        </div>
+    </div>
+    <div class="form-container">
+        <form id="priceForm">
+            <label for="promo">Personalizar:</label>
+            <select id="promo" name="promo" required>
+                <option value="PROMOÇÃO">Promoção</option>
+                <option value="OFERTA">Oferta</option>
+            </select><br>
+            <label for="productType">Tipo de Produto:</label>
+            <input type="text" id="productType" name="productType" placeholder="Ex: Carne Bovina" required><br>
+            <label for="product">Produto:</label>
+            <input type="text" id="product" name="product" placeholder="Ex: Rabada" required><br>
+            <label for="extra">Descrição do Produto:</label>
+            <input type="text" id="extra" name="extra" placeholder="Ex: Parte Traseira(opcional)" required><br>
+            <label for="price">Preço:</label>
+            <input type="text" id="price" name="price" placeholder="Ex: 10,99" required><br>
+            <label for="unit">Unidade:</label>
+            <select id="unit" name="unit" required>
+                <option value="Kg">Kg</option>
+                <option value="ml">ml</option>
+            </select><br>
+            <div class="button-container">
+                <button type="button" class="button" onclick="updatePricePlate()">Atualizar</button>
+                <button type="button" class="button" onclick="downloadImage()">Baixar Placa</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
