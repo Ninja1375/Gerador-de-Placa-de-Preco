@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.form-container {
+    margin-top: 20px;
+    width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label, input, select {
+    margin: 5px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.price-plate {
+    position: relative;
+    width: 400px;
+    height: 560px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.promo {
+    font-size: 42px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.details {
+    margin-bottom: 20px;
+}
+
+.product, .highlight, .extra {
+    font-size: 38px;
+    margin: 20px 0;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+}
+
+.currency, .unit {
+    font-size: 32px;
+}
+
+.amount {
+    font-size: 84px;
+    font-weight: bold;
+    margin: 0 10px;
+}
